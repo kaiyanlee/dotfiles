@@ -1,0 +1,9 @@
+e scr.color=3
+e scr.slow=false
+e cfg.fortunes.type=tips
+e io.cache=false
+e scr.utf8=true
+e scr.utf8.curvy=false
+e asm.cmt.right=true
+e asm.describe=true
+eco twilight

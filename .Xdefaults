@@ -1,0 +1,5 @@
+!!! .Xdefaults is deprecated in favour of .Xresources but some legacy
+!!! applications still use .Xdefaults. We will link this file back to
+!!! .Xresources to handle this conflict.
+
+.Xresources

@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+      force: true
+
+- clean: ["~"]
+
+- link:
+    ~/.Xresources: .Xresources
+    ~/.xinitrc: .xinitrc
+    ~/.vimrc: .vimrc
+    ~/.radare2rc: .radare2rc
+    ~/.config/wal/templates/colors-rofi.rasi: .config/wal/templates/colors-rofi.rasi
+    ~/.config/gtk-3.0/settings.ini: .config/gtk-3.0/settings.ini
+    ~/.config/rofi: .config/rofi
+    ~/.config/fontconfig: .config/fontconfig
+    ~/.config/ranger/rc.conf: .config/ranger/rc.conf
+    ~/.config/i3: .config/i3
+    ~/.config/htop: .config/htop
+    ~/.config/fish/config.fish: .config/fish/config.fish
+    ~/.config/Code/User/settings.json: .config/Code/User/settings.json
+    ~/.config/Code/User/keybindings.json: .config/Code/User/keybindings.json

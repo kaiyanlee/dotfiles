@@ -1,0 +1,17 @@
+configuration {
+    modi: "drun";
+    font: "monospace 40";
+    show-icons: false;
+    terminal: "urxvtc";
+    ssh-command: "urxvtc -e "{ssh-client} {host}"";
+    run-command: "fish -c '{cmd}'";
+    sort: false;
+    case-sensitive: false;
+    theme: "~/.cache/wal/colors-rofi.rasi";
+    kb-secondary-paste: "Control+v,Control+Shift+v";
+    kb-remove-char-back: "BackSpace";
+    kb-remove-to-eol: "Control+Shift+e";
+    kb-accept-entry: "Control+m,Return,KP_Enter";
+    kb-row-up: "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
+    kb-row-down: "Down,Control+j";
+}

@@ -1,0 +1,42 @@
+Xft.dpi:        288
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.autohint:   false
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
+
+Xcursor.theme: Adwaita
+Xcursor.size: 64
+
+XTerm.vt100.faceName: xft:iosevka:style=Regular:size=9:antialias=false
+XTerm.vt100.internalBorder: 32
+
+URxvt.lineSpace: 0
+URxvt.letterSpace: -1
+URxvt.buffered: false
+URxvt.jumpScroll: false
+URxvt.internalBorder: 32
+URxvt.externalBorder: 0
+URxvt.cursorBlink: false
+URxvt.cursorUnderline: false
+URxvt.saveLines: 10000
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.fading: 32
+URxvt.font: xft:iosevka:style=Regular:size=10:antialias=false
+URxvt.boldFont: xft:iosevka:style=Bold:size=10:antialias=false
+URxvt.italicFont: xft:iosevka:style=Italic:size=10:antialias=false
+URxvt.boldItalicFont: xft:iosevka:style=Bold Italic:size=10:antialias=false
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+URxvt.inheritPixmap: false
+URxvt.transparent: false
+URxvt.skipBuiltinGlyphs: true
+URxvt.scrollTtyOutput: true
+URxvt.perl-ext: -confirm-paste
+
