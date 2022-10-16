@@ -67,7 +67,7 @@
   "debug.internalConsoleOptions": "openOnSessionStart",
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
-  "json.schemaDownload.enable": false,
+  "json.schemaDownload.enable": true,
   "debug.toolBarLocation": "docked",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
@@ -213,7 +213,7 @@
   "C_Cpp.dimInactiveRegions": true,
   "C_Cpp.loggingLevel": "None",
   "C_Cpp.default.enableConfigurationSquiggles": false,
-  "workbench.colorTheme": "Halocline: Midnight Blue",
+  "workbench.colorTheme": "Mars",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "vscode-icon-theme",
   "errorLens.gutterIconsEnabled": false,
@@ -243,7 +243,6 @@
     "*.txt": "default"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.visible": false,
   "redhat.telemetry.enabled": false,
   "yaml.schemaStore.enable": false,
   "[yaml]": {
@@ -260,4 +259,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.statusBar.visible": false,
+  "cSpell.userWords": [
+    "Kaiyan",
+    "Kromite"
+  ],
 }

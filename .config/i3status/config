@@ -1,0 +1,30 @@
+general {
+        colors = true
+        interval = 30
+}
+
+order += "volume master"
+order += "wireless _first_"
+order += "memory"
+order += "tztime local"
+
+volume master {
+        format = "%volume"
+        format_muted = "Muted"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+wireless _first_ {
+        format_up = "%essid %ip"
+        format_down = "No Network"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M "
+}
+
+memory {
+        format = "%used"
+}

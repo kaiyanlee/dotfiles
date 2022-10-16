@@ -23,7 +23,7 @@ URxvt.cursorUnderline: false
 URxvt.saveLines: 10000
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
-URxvt.fading: 32
+URxvt.fading: 50
 URxvt.font: xft:iosevka:style=Regular:size=10:antialias=false
 URxvt.boldFont: xft:iosevka:style=Bold:size=10:antialias=false
 URxvt.italicFont: xft:iosevka:style=Italic:size=10:antialias=false
