@@ -18,6 +18,7 @@ set -x CCACHE_HARDLINK 1
 
 fish_add_path -m ~/.local/bin
 fish_add_path -m ~/go/bin
+fish_add_path -m ~/.aftman/bin
 
 function fish_prompt
     echo (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)

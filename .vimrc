@@ -82,6 +82,11 @@ set clipboard+=unnamedplus
 set nonumber
 set signcolumn=no
 
+call plug#begin()
+Plug 'dylanaraps/wal.vim'
+Plug 'sheerun/vim-polyglot'
+call plug#end()
+
 silent! filetype plugin indent on
 syntax enable
 
@@ -149,3 +154,6 @@ if has('termguicolors')
 endif
 
 syntax enable
+
+colorscheme wal
+

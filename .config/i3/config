@@ -1,21 +1,7 @@
 set $mod Mod4
 set $terminal urxvtc
 
-font pango:monospace 13
-
-set_from_resource $term-bg background #000000
-set_from_resource $bg color0 #000000
-set_from_resource $bg-light color8 #111111
-set_from_resource $fg color7 #eeeeee
-# set_from_resource $accent color2 #ffffff
-set $accent #00ff00
-set_from_resource $urgent color9 #ff0000
-
-client.unfocused $bg $bg $bg-light $fg $bg
-client.focused $term-bg $term-bg $accent $accent $accent
-client.focused_inactive $bg $bg $fg $fg $bg
-client.urgent $urgent $urgent $fg $fg $urgent
-client.background $bg
+font pango:monospace 14
 
 set $ws1 "1: System"
 set $ws2 "2: Browser"
@@ -33,7 +19,7 @@ popup_during_fullscreen smart
 title_align center
 workspace_layout tabbed
 
-for_window [class="^.*"] title_format "<span size='8000'>%title</span>"
+for_window [class="^.*"] title_format "<span size='9000'>%title</span>"
 for_window [class="^.*"] border pixel 0
 
 bindsym $mod+Return             exec $terminal
@@ -109,22 +95,39 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
- bar {
-     status_command i3status
-     position top
-     font pango:iosevka 8
-     colors {
-         separator $term-bg
-         background $term-bg
-         statusline $fg
-         focused_workspace $term-bg $term-bg $accent
-         active_workspace $term-bg $term-bg $fg
-         inactive_workspace $bg $bg $bg-light
-         urgent_workspace $urgent $urgent $bg
-     }
- }
+# set_from_resource $term-bg background #000000
+set $term-bg #000000
+set_from_resource $bg color0 #000000
+# set $bg #111111
+set_from_resource $bg-light color8 #111111
+set_from_resource $fg color7 #eeeeee
+# set_from_resource $accent color2 #ffffff
+set $accent #00ff00
+set_from_resource $urgent color9 #ff0000
+
+client.unfocused $term-bg $term-bg $bg-light $fg $bg
+client.focused $bg $bg $accent $accent $accent
+client.focused_inactive $bg $bg $fg $fg $bg
+client.urgent $urgent $urgent $fg $fg $urgent
+client.background $bg
+
+bar {
+    status_command i3status
+    position top
+    font pango:iosevka 9
+    colors {
+        separator $term-bg
+        background $term-bg
+        statusline $fg
+        focused_workspace $term-bg $term-bg $accent
+        active_workspace $term-bg $term-bg $fg
+        inactive_workspace $term-bg $term-bg $bg-light
+        urgent_workspace $urgent $urgent $term-bg
+    }
+}
 
 exec --no-startup-id wal -R
 exec --no-startup-id urxvtd
 exec --no-startup-id kitty
 exec --no-startup-id xsetroot -solid "#000000"
+exec --no-startup-id setxkbmap -layout us -option 'caps:swapescape'

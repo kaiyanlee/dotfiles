@@ -8,13 +8,13 @@
   },
   "[go.mod]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.formatOnSave": true
   },
   "[go]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.formatOnSave": true,
     "editor.parameterHints.enabled": false,
@@ -78,27 +78,27 @@
   "editor.colorDecorators": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorBlinking": "solid",
-  "editor.cursorSmoothCaretAnimation": false,
+  "editor.cursorSmoothCaretAnimation": "off",
   "editor.dragAndDrop": false,
   "markdown.preview.fontFamily": "roboto",
   "editor.folding": false,
   "editor.fontFamily": "iosevka",
   "editor.fontWeight": "700",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.letterSpacing": -0.75,
   "editor.hideCursorInOverviewRuler": true,
   "editor.overviewRulerBorder": false,
   "files.autoSave": "off",
-  "editor.lightbulb.enabled": false,
+  "editor.lightbulb.enabled": "off",
   "editor.lineNumbers": "on",
   "workbench.list.smoothScrolling": false,
   "editor.links": false,
   "editor.matchBrackets": "always",
   "editor.minimap.renderCharacters": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.occurrencesHighlight": false,
-  "editor.renderFinalNewline": true,
+  "editor.occurrencesHighlight": "off",
+  "editor.renderFinalNewline": "on",
   "editor.hover.enabled": true,
   "editor.guides.highlightActiveIndentation": false,
   "editor.guides.bracketPairsHorizontal": false,
@@ -126,6 +126,7 @@
   "git.autofetch": false,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "editor.stickyScroll.enabled": false,
   "keyboard.dispatch": "keyCode",
   "markdown.preview.markEditorSelection": false,
   "markdown.preview.scrollEditorWithPreview": false,
@@ -139,7 +140,6 @@
   "telemetry.telemetryLevel": "off",
   "editor.renderLineHighlight": "none",
   "editor.guides.bracketPairs": "active",
-  "timeline.excludeSources": ["timeline.localHistory"],
   "update.mode": "none",
   "update.showReleaseNotes": false,
   "window.closeWhenEmpty": false,
@@ -166,7 +166,7 @@
   "workbench.editor.enablePreview": false,
   "window.dialogStyle": "custom",
   "workbench.editor.showIcons": false,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.editor.untitled.labelFormat": "name",
   "workbench.enableExperiments": false,
   "go.toolsManagement.checkForUpdates": "off",
@@ -196,6 +196,8 @@
     "**/**": true
   },
   "files.restoreUndoStack": true,
+  "debug.focusEditorOnBreak": false,
+  "debug.focusWindowOnBreak": false,
   "breadcrumbs.icons": false,
   "cSpell.spellCheckDelayMs": 1000,
   "C_Cpp.clang_format_path": "/usr/bin/clang-format",
@@ -213,8 +215,7 @@
   "C_Cpp.dimInactiveRegions": true,
   "C_Cpp.loggingLevel": "None",
   "C_Cpp.default.enableConfigurationSquiggles": false,
-  "workbench.colorTheme": "Mars",
-  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "βui - Ayu Dark",
   "workbench.iconTheme": "vscode-icon-theme",
   "errorLens.gutterIconsEnabled": false,
   "editor.glyphMargin": false,
@@ -224,6 +225,7 @@
   "explorer.openEditors.visible": 16,
   "workbench.editor.decorations.colors": true,
   "go.survey.prompt": false,
+  "cmakeFormat.exePath": "cmake-format",
   "python.formatting.provider": "black",
   "errorLens.delay": 500,
   "security.workspace.trust.enabled": false,
@@ -253,14 +255,11 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.minimap.enabled": false,
   "window.menuBarVisibility": "toggle",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.statusBar.visible": false,
-  "cSpell.userWords": [
-    "Kaiyan",
-    "Kromite"
-  ],
+  "cSpell.userWords": ["Kaiyan", "Kromite", "Sumartian"],
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }
